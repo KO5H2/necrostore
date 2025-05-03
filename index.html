@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fuckambitions.com</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #E8E8E8;
+      font-family: Menlo, monospace;
+      height: 100%;
+      overflow: hidden;
+      cursor: none;
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 4vw;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    body.show-cursor {
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">necro.store</div>
+
+  <script>
+    let enableClickRedirect = false;
+
+    setTimeout(() => {
+      document.body.classList.add('show-cursor');
+      enableClickRedirect = true;
+    }, 20000);
+
+    document.body.addEventListener('click', () => {
+      if (enableClickRedirect) {
+        window.location.href = "https://necroblend.com/words.html";
+      }
+    });
+  </script>
+</body>
+</html>
